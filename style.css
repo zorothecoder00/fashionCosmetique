@@ -1,0 +1,62 @@
+/* Effet au survol des liens */
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline; /* Souligner le lien */
+    text-decoration-color:black;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.row .col-lg-4:nth-child(odd) img {
+    animation: slideLeft 1s ease-out;
+}
+
+.row .col-lg-4:nth-child(even) img {
+    animation: slideRight 1s ease-out;
+}
+
+
+/* Style pour les inputs */
+.contact-input {
+    border-radius: 10px;  /* Bordure arrondie */
+    padding: 10px;        /* Espacement intérieur pour rendre l'input plus grand */
+    border: 1px solid #ccc;  /* Bordure de l'input */
+    width: 200px;         /* Largeur des inputs */
+    margin-bottom: 10px;  /* Espacement entre les inputs */
+}
+
+/* Style pour le bouton d'envoi */
+.submit-btn {
+    border-radius: 10px;  /* Bordure arrondie */
+    padding: 10px 20px;    /* Espacement intérieur */
+    background-color: #28a745;  /* Couleur de fond */
+    color: white;          /* Couleur du texte */
+    border: none;          /* Enlever la bordure par défaut */
+    cursor: pointer;      /* Curseur pointer pour le bouton */
+    font-size: 16px;       /* Taille du texte */
+    transition: background-color 0.3s;  /* Transition de la couleur de fond */
+}
+
+/* Effet au survol du bouton */
+.submit-btn:hover {
+    background-color: #218838;  /* Changement de couleur lors du survol */
+}
