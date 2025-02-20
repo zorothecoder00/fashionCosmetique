@@ -48,6 +48,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#cosmetiques">Nos produits cosmétiques</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link text-white fw-bold fs-5" href="#apropos">À propos</a>
                         </li>  
         
@@ -70,6 +74,14 @@
             </div>
 
         </section>
+        <section class="container-fluid" id="apropos">
+            <div class="justify-content-center">
+                <h1 class="text-center">Petit résumé sur les activités de notre entreprise</h1>
+                <p class="text-center">Notre société est une société basée sur la haute couture des pagnes et aussi une expertise pour les produits cosmétiques de qualité.
+                </p>
+            </div>
+        </section>
+
 
         <!--Section pour les modèles-->
         <section id="modeles" class=" text-white  " style="background-color: coral;">
@@ -79,23 +91,113 @@
                 <div  class="row justify-content-center align-items-center mx-2 mb-4">
                     <div class="col-lg-4 col-md-6 ">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
                     </div>
                      <div class="col-lg-4 col-md-6">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
                     </div>
                 </div>
 
                 <div class="row justify-content-center align-items-center mx-2 pb-3">
                     <div class="col-lg-4 col-md-6 ">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
                     </div>
                 </div>
 
             </div> 
         </section>
+
+        <section class="container-fluid py-4" id="cosmetiques" style="background-color: black;">
+            <div class="row justify-content-center">
+                <h2 class="text-center text-white mb-4">Nos produits cosmétiques</h2>
+                <!-- Première ligne -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-top">
+                        <img src="{{ asset('images/cosmetique0.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Douceur</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-top">
+                        <img src="{{ asset('images/cosmetique1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Nature</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-top">
+                        <img src="{{ asset('images/cosmetique2.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Hydratant</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-top">
+                        <img src="{{ asset('images/cosmetique4.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Exfoliant</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary" style="padding: auto;">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deuxième ligne -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg">
+                        <img src="{{ asset('images/cosmetique5.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Bio</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg">
+                        <img src="{{ asset('images/cosmetique6.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Éclaircissant</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg">
+                        <img src="{{ asset('images/cosmetique7.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Antibactérien</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg">
+                        <img src="{{ asset('images/cosmetique8.avif') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body" style="background-color: darkgoldenrod;">
+                            <h5 class="card-title">Savon Luxueux</h5>
+                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!--Section Contact -->           
         <section id="contact" class=" py-5 text-white" style="background-image:url('{{ asset('images/fashion10.jpg') }}')!important; height: 500px!important;background-size: cover !important;   background-position: center !important; background-position: center 5px !important; padding-top: 5px;">
@@ -105,19 +207,19 @@
                 <p class="text-center mb-4">Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
 
                 <!-- Formulaire de contact -->
-                <form class="contact-form" method="POST" action="">
+                <form class="contact-form" method="POST" action="{{ route('contact.send') }}">
                     @csrf
                     <!-- Prénom -->
-                    <input type="text" class="contact-input" placeholder="Prénom" name="first-name" required>
+                    <input type="text" class="contact-input" placeholder="Prénom" name="firstname" required>
 
                     <!-- Nom -->
-                    <input type="text" class="contact-input" placeholder="Nom" name="last-name" required>
+                    <input type="text" class="contact-input" placeholder="Nom" name="name" required>
 
                     <!-- Téléphone -->
                     <input type="tel" class="contact-input" placeholder="Téléphone" name="phone" required>
 
                     <!-- Email -->
-                    <input type="email" class="contact-input" placeholder="Email" name="email" required>
+                    <input type="email" class="contact-input" placeholder="Email" name="mail" required>
 
                     <!-- Bouton d'envoi -->
                     <button type="submit" class="submit-btn">Envoyer</button>

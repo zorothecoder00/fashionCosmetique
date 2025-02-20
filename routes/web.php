@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;  
+use Http\Controllers\ContactController;
 
-/*
+/* 
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -11,8 +12,18 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+*/  
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/commandeModele', function() {
+    return view('commandeModele');
+})->name("commandeModele");
+
+Route::get('/commandeSavon', function() {
+    return view('commandeSavon');
+})->name('commandeSavon');
+
+Route::post('/contact' ,[ContactController::class ,'send'])->name('contact.send');

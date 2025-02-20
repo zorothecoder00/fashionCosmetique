@@ -1,4 +1,19 @@
 /* Effet au survol des liens */
+html, body {
+    overflow-x: hidden;
+}
+
+section{
+    max-width: 100%;
+}
+.btn {
+    background-color: black;
+}
+#modeles{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: underline; /* Souligner le lien */
     text-decoration-color:black;
@@ -59,4 +74,20 @@
 /* Effet au survol du bouton */
 .submit-btn:hover {
     background-color: #218838;  /* Changement de couleur lors du survol */
+}
+
+.card ,#card-top
+{
+    transition: transform 1s ease ,opacity 1s ease;
+}
+ 
+#card-top:hover
+{
+    transform: translateY(-50px);
+    opacity: 0.9;
+}
+.card:hover
+{
+    transform: translateY(50px);
+    opacity: 0.9;
 }
