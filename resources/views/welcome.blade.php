@@ -28,7 +28,7 @@
             <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="#!">
+                <a class="navbar-brand" href="#!">  
                    <img src=""alt="" class="img-fluid">
                 </a> 
 
@@ -118,10 +118,10 @@
         </section>
 
         <section class="container-fluid py-4" id="cosmetiques" style="background-color: black;">
-            <div class="row justify-content-center">
+            <div class="row d-flex justify-content-center">
                 <h2 class="text-center text-white mb-4">Nos produits cosmétiques</h2>
                 <!-- Première ligne -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class=" col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg" id="card-top">
                         <img src="{{ asset('images/cosmetique0.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg" id="card-top">
                         <img src="{{ asset('images/cosmetique1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg" id="card-top">
                         <img src="{{ asset('images/cosmetique2.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -148,18 +148,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card text-center shadow-lg" id="card-top">
-                        <img src="{{ asset('images/cosmetique4.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
-                        <div class="card-body" style="background-color: darkgoldenrod;">
-                            <h5 class="card-title">Savon Exfoliant</h5>
-                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary" style="padding: auto;">Commander</a>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!-- Deuxième ligne -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class=" col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique5.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -168,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique6.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -177,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique7.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -186,15 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card text-center shadow-lg">
-                        <img src="{{ asset('images/cosmetique8.avif') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
-                        <div class="card-body" style="background-color: darkgoldenrod;">
-                            <h5 class="card-title">Savon Luxueux</h5>
-                            <a href="{{ route('commandeSavon') }}" class="btn btn-primary">Commander</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
