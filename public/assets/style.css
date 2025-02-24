@@ -71,23 +71,23 @@ section{
     transition: background-color 0.3s;  /* Transition de la couleur de fond */
 }
 
-/* Effet au survol du bouton */
+/* Effet au survol du bouton */  
 .submit-btn:hover {
     background-color: #218838;  /* Changement de couleur lors du survol */
 }
 
-.card ,#card-top
+.card ,#card-top  
 {
-    transition: transform 1s ease ,opacity 1s ease;
+    transition: transform 0.5s ease ,opacity 1s ease;
 }
  
 #card-top:hover
 {
     transform: translateY(-50px);
-    opacity: 0.9;
+    opacity: 0.1;
 }
 .card:hover
 {
     transform: translateY(50px);
-    opacity: 0.9;
+    opacity: 0.1;   
 }

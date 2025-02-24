@@ -1,5 +1,5 @@
 <?php
-
+    
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -18,7 +18,7 @@ class ContactController extends Controller
         ]);
 
         //Envoi du mail
-        Mail::to('awledouamoussou95@gmail.com')->send(new ContactFormMail(
+        Mail::to('from@example.com')->queue(new ContactFormMail(
             $validated['firstname'],
             $validated['name'],
             $validated['phone'],
