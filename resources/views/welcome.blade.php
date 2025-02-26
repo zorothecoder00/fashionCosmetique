@@ -11,7 +11,13 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Lien pour les icons Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- Ajouter Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('assets/style.css') }}" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -40,23 +46,23 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
 
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#accueil">Accueil</a>
+                            <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#accueil"><i class="fas fa-home"></i>Accueil</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5" href="#modeles">Modèles</a>
+                            <a class="nav-link text-white fw-bold fs-5" href="#modeles"><i class="bi bi-flower1"></i>Modèles</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5" href="#cosmetiques">Nos produits cosmétiques</a>
+                            <a class="nav-link text-white fw-bold fs-5" href="#cosmetiques"><i class="bi bi-bag-check-fill"></i>Nos produits cosmétiques</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5" href="#apropos">À propos</a>
+                            <a class="nav-link text-white fw-bold fs-5" href="#apropos"> <i class="fas fa-info-circle"></i>À propos</a>
                         </li>  
         
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5" href="#contact">Contact</a>
+                            <a class="nav-link text-white fw-bold fs-5" href="#contact"><i class="fas fa-envelope"></i>Contact</a>
                         </li>
 
                     </ul>
@@ -68,7 +74,7 @@
         <!-- Section Accueil--> 
         <section class="justify-content-center align-items-center text-center w-100 " id="accueil">
 
-            <div class="container-fluid w-100" id="background-image" style="background-image: url('{{ asset('images/fashion11.webp') }}');; background-position: center ;background-size: cover;  height: 90vh ;">
+            <div class="container-fluid w-100" id="background-image" style="background-image: url('{{ asset('images/fashion11.webp') }}'); background-position: center ;background-size: cover;  height: 90vh ;">
                 <h1></h1> 
                 <p></p>
             </div>
