@@ -82,8 +82,8 @@
         </section>
         <section class="container-fluid" id="apropos">
             <div class="justify-content-center">
-                <h1 class="text-center">Petit résumé sur les activités de notre entreprise</h1>
-                <p class="text-center">Notre société est une société basée sur la haute couture des pagnes et aussi une expertise pour les produits cosmétiques de qualité.
+                <h1 class="text-center mt-4">Petit résumé sur les activités de notre entreprise</h1>
+                <p class="text-center mb-4">Notre société est une société basée sur la haute couture des pagnes et aussi une expertise pour les produits cosmétiques de qualité.
                 </p>
             </div>
         </section>
@@ -95,12 +95,22 @@
                 <h1 class="text-center pt-3 mb-4 fs-1">Nos modèles</h1>
 
                 <div  class="row justify-content-center align-items-center mx-2 mb-4">
-                    <div class="col-lg-4 col-md-6 ">
+                    <div class="card col-lg-2 col-md-3 ">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
                         <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
                         </a>
                     </div>
-                     <div class="col-lg-4 col-md-6">
+                     <div class="card col-lg-2 col-md-3">
+                        <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
+                    </div>
+                    <div class="card col-lg-2 col-md-3 ">
+                        <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
+                    </div>
+                     <div class="card col-lg-2 col-md-3">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
                         <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
                         </a>
@@ -108,12 +118,22 @@
                 </div>
 
                 <div class="row justify-content-center align-items-center mx-2 pb-3">
-                    <div class="col-lg-4 col-md-6 ">
+                    <div class="card col-lg-2 col-md-3 ">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
                         <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="card col-lg-2 col-md-3">
+                        <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
+                    </div>
+                    <div class="card col-lg-2 col-md-3 ">
+                        <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
+                        <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
+                        </a>
+                    </div>
+                     <div class="card col-lg-2 col-md-3">
                         <img src="{{ asset('images/fashion.jpg') }}" class="img-fluid rounded slide">
                         <a href="{{ route("commandeModele") }}" class="btn btn-dark mt-2">VOIR PLUS
                         </a>
@@ -121,14 +141,16 @@
                 </div>
 
             </div> 
-        </section>
+        </section>  
 
-        <section class="container-fluid py-4" id="cosmetiques" style="background-color: black;">
+        <section class="container-fluid py-4" id="cosmetiques" style="background-color: black;">  
             <div class="row d-flex justify-content-center">
                 <h2 class="text-center text-white mb-4">Nos produits cosmétiques</h2>
+
                 <!-- Première ligne -->
-                <div class=" col-lg-4 col-md-4 col-sm-6 mb-4">
-                    <div class="card text-center shadow-lg" id="card-top">
+                <div class="slider-container row justify-content-center align-items-center">
+                <div class="slider col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-slide">
                         <img src="{{ asset('images/cosmetique0.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
                             <h5 class="card-title">Savon Douceur</h5>
@@ -136,8 +158,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-                    <div class="card text-center shadow-lg" id="card-top">
+
+                <div class="slider col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-slide">
                         <img src="{{ asset('images/cosmetique1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
                             <h5 class="card-title">Savon Nature</h5>
@@ -145,8 +168,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-                    <div class="card text-center shadow-lg" id="card-top">
+                <div class="slider col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card text-center shadow-lg" id="card-slide">
                         <img src="{{ asset('images/cosmetique2.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
                             <h5 class="card-title">Savon Hydratant</h5>
@@ -154,10 +177,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
                 
 
                 <!-- Deuxième ligne -->
-                <div class=" col-lg-4 col-md-4 col-sm-6 mb-4">
+                <div class="row justify-content-center align-items-center">
+                <div class=" col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique5.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -166,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique6.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -175,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card text-center shadow-lg">
                         <img src="{{ asset('images/cosmetique7.webp') }}" class="card-img-top" style="height: 200px; object-fit: cover;">
                         <div class="card-body" style="background-color: darkgoldenrod;">
@@ -184,6 +209,8 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                
                 
             </div>
         </section>
